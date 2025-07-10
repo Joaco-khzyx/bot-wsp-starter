@@ -1,0 +1,23 @@
+{
+  "name": "whatsapp-bots-baileys",
+  "version": "1.0.0",
+  "description": "Repositorio para crear bots de WhatsApp usando Baileys con ejemplos prácticos y documentación para principiantes.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bots",
+    "baileys",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Joaquín Heredia",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^4.6.0",
+    "better-sqlite3": "^8.0.0",
+    "sharp": "^0.32.1"
+  }
+}
