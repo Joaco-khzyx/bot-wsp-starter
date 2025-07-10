@@ -52,13 +52,11 @@ A continuación te explico qué hará nuestro bot:
 ## 📋 Ejemplo de Código en JavaScript
 
     // Importar Baileys
-    const { default: makeWASocket } = require('@whiskeysockets/baileys');
-    const { useMultiFileAuthState } = require('@whiskeysockets/baileys');
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 
-    // Autenticación
+async function startBot() {
     const { state, saveCreds } = await useMultiFileAuthState('./session');
-
-    // Crear conexión
+    
     const sock = makeWASocket({
         auth: state
     });
